@@ -35,8 +35,8 @@ public class MyController {
     List<Person>   persons = (List<Person>) query.getResultList();
 
     //CREATE DTO
-    PersonsDTO  personsDTO = new PersonsDTO();
-                personsDTO.count = persons.get(0).count;
+    PersonsDTO  personsDTO         = new PersonsDTO();
+                personsDTO.count   = persons.get(0).count;
                 personsDTO.persons = persons;
 
     //RETURN DTO

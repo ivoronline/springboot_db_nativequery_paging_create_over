@@ -1,7 +1,6 @@
 package com.ivoronline.springboot_db_nativequery_paging_create_over.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,7 +17,7 @@ public class Person {
   public String     name;
   public Integer    age;
 
-  //@JsonIgnore
+  @JsonIgnore
   public BigInteger count;
 
 }
